@@ -27,6 +27,7 @@
 @media screen and (max-width:470px){
     .popular-item{
     margin-top:3rem;
+    margin:1.25rem 7rem;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;

@@ -38,7 +38,13 @@
     font-weight:500;
 }
 @media screen and (max-width:1000px){
+    .shopcategory-banner{
+     display:block;
+      margin:1.6rem 3rem;
+      width:82%;  
+   }
     .shopcategory-products{
+        margin:1.25rem 4.5rem;
         display:flex;
         flex-direction:row;
         flex-wrap:wrap;
