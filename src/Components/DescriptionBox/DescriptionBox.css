@@ -1,6 +1,5 @@
 .descriptionbox{
-    margin:120px 170px;
-    
+    margin:4.5rem 4rem; 
 }
 .descriptionbox-navigator{
     display:flex;
@@ -9,10 +8,10 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    font-size:16px;
+    font-size:1rem;
     font-weight:600;
-    width:171px;
-    height:70px;
+    width:10.2rem;
+    height:5rem;
     border:1px solid #d0d0d0;
 }
 .descriptionbox-nav-box.fade{
@@ -24,8 +23,26 @@
     flex-direction:column;
     align-items:start;
     text-align:left;
-    gap:25px;
+    gap:1.5rem;
     border:1px solid #D0D0D0;
-    padding:48px;
-    padding-bottom:70px;
+    padding:2rem;
+    font-size:1rem;
+}
+@media screen and (max-width:730px){
+    .descriptionbox{
+      margin:3rem 0.5em;
+    }
+    .descriptionbox-nav-box{
+    font-size:0.7rem;
+    font-weight:600;
+    width:6rem;
+    height:2.25rem;
+    border:1px solid #d0d0d0;
+    }
+    .descriptionbox-description{
+    gap:0.7rem;
+    border:1px solid #D0D0D0;
+    padding:0.8rem;
+    font-size:0.75rem;
+}
 }

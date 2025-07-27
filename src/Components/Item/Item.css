@@ -1,21 +1,21 @@
 .item{
-    width:220px;
+    width:14rem;
 }
 .item p{
-    margin:6px 0px;
+    margin:0.35rem 0px;
 }
 .item-prices{
     display:flex;
-    gap:20px;
+    gap:1.2rem;
 }
 .item-price-new{
 color:#374151;
-font-size:18px;
+font-size:1.1rem;
 font-weight:500;
 }
 .item-price-old{
 color:#8c8c8c;
-font-size:18px;
+font-size:1.1rem;
 font-weight:500;
 text-decoration:line-through;
 }
@@ -24,5 +24,5 @@ text-decoration:line-through;
     transition:0.6s;
 }
 .itemimage{
-    width:300px;
+    width:15rem;
 }

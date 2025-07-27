@@ -6,47 +6,93 @@
     justify-content:center;
     align-items:center;
     margin:auto;
-    padding:0px 140px;
-    margin-bottom:150px;
+    padding:0px 8.5rem;
+    margin-bottom:9rem;
     background:linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%);
-    gap:30px;
+    gap:1.75rem;
 }
 .newsletter h1{
     color:#454545;
-    font-size:55px;
+    font-size:3.5rem;
     font-weight:600;
+    padding-top:2rem;
 }
 .newsletter p{
     color:#454545;
-    font-size:20px;
+    font-size:1.25rem;
 }
 .newsletter div{
     display:flex;
     align-items:center;
     justify-content:space-between;
     background:white;
-    width:730px;
-    height:70px;
-    border-radius:80px;
+    width:45rem;
+    height:4.5rem;
+    border-radius:5rem;
     border:1px solid #e3e3e3;
 }
 .newsletter input{
-    width:500px;
-    margin-left:30px;
+    width:42rem;
+    margin-left:1.75rem;
     border:none;
     outline:none;
     color:#616161;
     font-family:P;
-    font-size:16px;
+    font-size:1rem;
 }
 .newsletter div button{
-    width:210px;
-    height:70px;
-    border-radius:80px;
+    width:13rem;
+    height:4.5rem;
+    border-radius:7rem;
     background:black;
     color:white;
-    font-size:16px;
+    font-size:1rem;
     cursor:pointer;
     font-family:P;
+
+}
+
+@media screen and (max-width:730px){
+    .newsletter h1{
+    color:#454545;
+    font-size:1.75rem;
+    font-weight:600;
+    padding-top:2rem;
+}
+.newsletter p{
+    color:#454545;
+    font-size:0.75rem;
+    font-weight:600;
+}
+.newsletter div{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:white;
+    width:20rem;
+    height:2.5rem;
+    border-radius:2rem;
+    border:1px solid #e3e3e3;
+}
+.newsletter input{
+    width:20rem;
+    margin-left:0.5rem;
+    border:none;
+    outline:none;
+    color:#616161;
+    font-family:P;
+    font-size:0.75rem;
+}
+.newsletter div button{
+    width:6.5rem;
+    height:2.5rem;
+    border-radius:3rem;
+    background:black;
+    color:white;
+    font-size:0.75rem;
+    cursor:pointer;
+    font-family:P;
+
+   }
 
 }
