@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import "./ProductDisplay.css";
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
@@ -7,6 +7,7 @@ const ProductDisplay = (props) => {
    const {product}=props;
 //    console.log(props);
    const{addToCart}=useContext(ShopContext);
+   const [size,setSize]=useState("S");
   return (
     <div className="productdisplay">
         <div className="productdisplay-left">
@@ -45,14 +46,14 @@ const ProductDisplay = (props) => {
             <div className="productdisplay-right-size">
                     <h1>Select Size</h1>
                     <div className="productdisplay-right-sizes">
-                        <div>S</div>
-                        <div>M</div>
-                        <div>L</div>
-                        <div>XL</div>
-                        <div>XXL</div>
+                        <div onClick={()=>setSize("S")} style={{border:size==="S"?"2px solid #ff4141":"1px solid #ebebeb"}}>S</div>
+                        <div onClick={()=>setSize("M")} style={{border:size==="M"?"2px solid #ff4141":"1px solid #ebebeb"}}>M</div>
+                        <div onClick={()=>setSize("L")} style={{border:size==="L"?"2px solid #ff4141":"1px solid #ebebeb"}}>L</div>
+                        <div onClick={()=>setSize("XL")} style={{border:size==="XL"?"2px solid #ff4141":"1px solid #ebebeb"}}>XL</div>
+                        <div onClick={()=>setSize("XXL")} style={{border:size==="XXL"?"2px solid #ff4141":"1px solid #ebebeb"}}>XXL</div>
                     </div>
             </div>
-            <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
+            <button onClick={()=>{addToCart(product.id,size)}}>ADD TO CART</button>
             <p className="producatdisplay-right-category"><span>Category :</span>{product.category} ,T-Shirt ,Crop Top</p>
             <p className="producatdisplay-right-category"><span>Tags :</span>Modern ,Latest</p>
 

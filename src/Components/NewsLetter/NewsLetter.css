@@ -85,7 +85,8 @@
 }
 .newsletter div button{
     width:6.5rem;
-    height:2.5rem;
+    /* height:2.5rem; */
+    height:auto;
     border-radius:3rem;
     background:black;
     color:white;

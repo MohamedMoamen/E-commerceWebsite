@@ -29,6 +29,7 @@ font-weight:600;
       font-weight:600;
      }
     .relatedproducts-item{
+        margin:1.25rem 4.5rem;
         display:flex;
         flex-direction:row;
         flex-wrap:wrap;
